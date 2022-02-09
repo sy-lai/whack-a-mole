@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Futura';
+    src: url("./fonts/Futura Book font.ttf");
+}
+*{
+	font-family: 'Futura';
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+
+}
+
+.wrap{
+	display: grid;
+	grid-template-rows: 10% auto 10%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	grid-row-gap: 5%;
+
+	height: 100vh;
+	background: #01893f;
+}
+.content{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	color: yellow;
+	width: 60%;
+	
+	text-align: center;
+}
+
+/* =================================== */
+.content:nth-child(1){
+	padding: 0% 5%;
+	justify-content: space-between;
+}
+.content .counterCont{
+	text-align: center;
+}
+.content .counterCont span{
+	font-size: 1.3vmax;
+}
+.content .counterCont .count{
+	font-size: 2vmax;
+	color: white;
+}
+@media only screen and (max-width: 600px) {
+	.heading{
+		font-size: 4vmax;
+	}
+	.content .counterCont span{
+		font-size: 2vmax;
+	}
+	.content .counterCont .count{
+		font-size: 4vmax;
+	}
+}
+/* ================================== */
+.content:nth-child(2){
+}
+.tbl{
+	
+}
+.tblR{
+	border: solid white;
+}
+.tblC{
+	cursor: pointer;
+	padding: 10% 5% 0% 5%;
+}
+img{
+	width: 100%;
+}
+/* ================================== */
+.content:nth-child(3){
+	margin-top: 10%;
+	justify-content: center;
+}
+.content .reset{
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	padding: 2% 10%;
+	border-radius: 0.3rem;
+	box-shadow: 0px 0px 2px yellow;
+	color: yellow;
+	transition: 0.3s linear;
+}
+.content .reset:hover{
+	background: rgba(0, 200, 0, 0.5);
+}
